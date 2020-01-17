@@ -1,0 +1,206 @@
+diff --git a/package.json b/package.json
+index cbd0e71..3decf31 100644
+--- a/package.json
++++ b/package.json
+@@ -9,2 +9,3 @@
+     "react": "^16.12.0",
++    "react-diff-view": "^2.4.1",
+     "react-dom": "^16.12.0",
+diff --git a/yarn.lock b/yarn.lock
+index e1823b9..b39b946 100644
+--- a/yarn.lock
++++ b/yarn.lock
+@@ -1961,3 +1961,3 @@ arrify@^1.0.1:
+ 
+-asap@~2.0.6:
++asap@~2.0.3, asap@~2.0.6:
+   version "2.0.6"
+@@ -2644,2 +2644,7 @@ chalk@^1.1.3:
+ 
++change-emitter@^0.1.2:
++  version "0.1.6"
++  resolved "https://registry.yarnpkg.com/change-emitter/-/change-emitter-0.1.6.tgz#e8b2fe3d7f1ab7d69a32199aff91ea6931409515"
++  integrity sha1-6LL+PX8at9aaMhma/5HqaTFAlRU=
++
+ chardet@^0.7.0:
+@@ -2703,2 +2708,7 @@ class-utils@^0.3.5:
+ 
++classnames@^2.2.6:
++  version "2.2.6"
++  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
++  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
++
+ clean-css@4.2.x:
+@@ -3005,2 +3015,7 @@ core-js-pure@^3.0.0:
+ 
++core-js@^1.0.0:
++  version "1.2.7"
++  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
++  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
++
+ core-js@^2.4.0:
+@@ -3511,2 +3526,7 @@ detect-port-alt@1.1.6:
+ 
++diff-match-patch@^1.0.4:
++  version "1.0.4"
++  resolved "https://registry.yarnpkg.com/diff-match-patch/-/diff-match-patch-1.0.4.tgz#6ac4b55237463761c4daf0dc603eb869124744b1"
++  integrity sha512-Uv3SW8bmH9nAtHKaKSanOQmj2DnlH65fUpcrMdfdaOxUG02QQ4YGZ8AE7kKOMisF7UqvOlGKVYWRvezdncW9lg==
++
+ diff-sequences@^24.9.0:
+@@ -3723,2 +3743,9 @@ encodeurl@~1.0.2:
+ 
++encoding@^0.1.11:
++  version "0.1.12"
++  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
++  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
++  dependencies:
++    iconv-lite "~0.4.13"
++
+ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
+@@ -4265,2 +4292,15 @@ fb-watchman@^2.0.0:
+ 
++fbjs@^0.8.1:
++  version "0.8.17"
++  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
++  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
++  dependencies:
++    core-js "^1.0.0"
++    isomorphic-fetch "^2.1.1"
++    loose-envify "^1.0.0"
++    object-assign "^4.1.0"
++    promise "^7.1.1"
++    setimmediate "^1.0.5"
++    ua-parser-js "^0.7.18"
++
+ figgy-pudding@^3.5.1:
+@@ -4846,2 +4886,7 @@ hmac-drbg@^1.0.0:
+ 
++hoist-non-react-statics@^2.3.1:
++  version "2.5.5"
++  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
++  integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
++
+ hosted-git-info@^2.1.4:
+@@ -5000,3 +5045,3 @@ https-browserify@^1.0.0:
+ 
+-iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
++iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
+   version "0.4.24"
+@@ -5457,3 +5502,3 @@ is-root@2.1.0:
+ 
+-is-stream@^1.1.0:
++is-stream@^1.0.1, is-stream@^1.1.0:
+   version "1.1.0"
+@@ -5518,2 +5563,10 @@ isobject@^3.0.0, isobject@^3.0.1:
+ 
++isomorphic-fetch@^2.1.1:
++  version "2.2.1"
++  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
++  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
++  dependencies:
++    node-fetch "^1.0.1"
++    whatwg-fetch ">=0.10.0"
++
+ isstream@~0.1.2:
+@@ -6775,2 +6828,10 @@ no-case@^2.2.0:
+ 
++node-fetch@^1.0.1:
++  version "1.7.3"
++  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
++  integrity sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
++  dependencies:
++    encoding "^0.1.11"
++    is-stream "^1.0.1"
++
+ node-forge@0.9.0:
+@@ -8265,2 +8326,9 @@ promise-inflight@^1.0.1:
+ 
++promise@^7.1.1:
++  version "7.3.1"
++  resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
++  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
++  dependencies:
++    asap "~2.0.3"
++
+ promise@^8.0.3:
+@@ -8486,2 +8554,13 @@ react-dev-utils@^10.0.0:
+ 
++react-diff-view@^2.4.1:
++  version "2.4.1"
++  resolved "https://registry.yarnpkg.com/react-diff-view/-/react-diff-view-2.4.1.tgz#bbeca5746bc8b60b3abab13b3f2f55d37f1430b8"
++  integrity sha512-PJL5jWvVAlNfihK4QadSJDC2noo04ppJNKgb+m59lAqYoRTFIRvH6+zSiQFN2l+H84MLYIQgBx/xyLDj7pca8w==
++  dependencies:
++    classnames "^2.2.6"
++    diff-match-patch "^1.0.4"
++    recompose "^0.30.0"
++    shallow-equal "^1.2.0"
++    warning "^4.0.2"
++
+ react-dom@^16.12.0:
+@@ -8506,2 +8585,7 @@ react-is@^16.8.1, react-is@^16.8.4:
+ 
++react-lifecycles-compat@^3.0.2:
++  version "3.0.4"
++  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
++  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
++
+ react-scripts@3.3.0:
+@@ -8647,2 +8731,14 @@ realpath-native@^1.1.0:
+ 
++recompose@^0.30.0:
++  version "0.30.0"
++  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.30.0.tgz#82773641b3927e8c7d24a0d87d65aeeba18aabd0"
++  integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==
++  dependencies:
++    "@babel/runtime" "^7.0.0"
++    change-emitter "^0.1.2"
++    fbjs "^0.8.1"
++    hoist-non-react-statics "^2.3.1"
++    react-lifecycles-compat "^3.0.2"
++    symbol-observable "^1.0.4"
++
+ recursive-readdir@2.2.2:
+@@ -9171,3 +9267,3 @@ set-value@^2.0.0, set-value@^2.0.1:
+ 
+-setimmediate@^1.0.4:
++setimmediate@^1.0.4, setimmediate@^1.0.5:
+   version "1.0.5"
+@@ -9211,2 +9307,7 @@ shallow-clone@^3.0.0:
+ 
++shallow-equal@^1.2.0:
++  version "1.2.1"
++  resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
++  integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
++
+ shebang-command@^1.2.0:
+@@ -9739,2 +9840,7 @@ svgo@^1.0.0, svgo@^1.2.2:
+ 
++symbol-observable@^1.0.4:
++  version "1.2.0"
++  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
++  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
++
+ symbol-tree@^3.2.2:
+@@ -10004,2 +10110,7 @@ typedarray@^0.0.6:
+ 
++ua-parser-js@^0.7.18:
++  version "0.7.21"
++  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
++  integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
++
+ uglify-js@3.4.x:
+@@ -10259,2 +10370,9 @@ walker@^1.0.7, walker@~1.0.5:
+ 
++warning@^4.0.2:
++  version "4.0.3"
++  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
++  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
++  dependencies:
++    loose-envify "^1.0.0"
++
+ watchpack@^1.6.0:
+@@ -10406,3 +10524,3 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
+ 
+-whatwg-fetch@^3.0.0:
++whatwg-fetch@>=0.10.0, whatwg-fetch@^3.0.0:
+   version "3.0.0"
